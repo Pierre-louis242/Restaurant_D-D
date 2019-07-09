@@ -1,0 +1,871 @@
+
+html {
+    background-image: url('../assets/backgroundbody.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Kalam', cursive;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+header {
+    height: 100vh; 
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    background-image: url("../assets/DandDHeader.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+}
+
+footer {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif !important;
+    flex-direction: row;
+    color: dimgrey;
+    background-color: #F4A940;
+    border-top: 3px solid #c57300;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+#cover {
+    position: fixed;
+    height: 100%; 
+    width: 100%; 
+    top:0; 
+    left: 0; 
+    background: #000; 
+    z-index:9999; 
+    font-size: 8rem; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Kalam', cursive !important;
+    color: #F4A940;
+}
+
+#coverText {
+    transition: 1s;
+    color: black;
+}
+
+.headerLogoAndStyleBar {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoDisplay {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #F4A940;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.barStyleHeader {
+    width: 30%; 
+    height: 10%;
+    background-color: #F4A940;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.contentForHeader {
+    height: 100%; 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#barName {
+    margin: 0;
+    color: #F4A940;
+    font-size: 6rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+#descripBar {
+    margin: 0;
+}
+
+.descriptionHeader {
+    height: 60%; 
+    width: 60%; 
+    margin-left: 5%;
+}
+
+.textIntroduction {
+    height: 40%;
+    padding: 40px;
+}
+
+.buttonToNavigate {
+    height: 31%;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;    
+    font-size: 15px;
+}
+
+.buttonToReserve {
+    width: 20%;
+    height: 30%;
+    border: 2px solid #F4A940;
+    margin-left: 5%;
+    min-width: 50px;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.buttonToReserve:hover {
+    color: #ffffff !important;
+    background: #F4A940;
+    border-color: #F4A940 !important;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+.buttonToSeeFood {
+    width: 20%;
+    height: 30%;
+    border: 2px solid #F4A940;
+    margin-left: 5%;
+    min-width: 50px;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.buttonToSeeFood:hover {
+    color: #ffffff !important;
+    background: #F4A940;
+    border-color: #F4A940 !important;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+#arrowToGoDown {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: #F4A940;
+}
+
+.fa-chevron-down:hover {
+    transition: 0.7s;
+    color: white;
+    text-shadow: 1px 1px 1px #F4A940;
+    cursor: pointer;
+}
+
+.descriptionStoryRestau {
+    height: 100vh;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+}
+
+.ourStorytitle {
+    width: 15%;
+    margin-right: auto;
+    margin-left: 15%;
+    min-width: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: #F4A940;
+}
+
+.divForTheTextOfTheStory {
+    height: fit-content;
+}
+
+.textOfTheStory {
+    height: 20vh;
+    width: 35%;
+    padding: 10px;
+    min-width: 150px;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-bottom: 2.5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid #F4A940;
+}
+
+#textStoryTelling {
+    margin: 0;
+}
+
+#theDandD {
+    margin: 0;
+}
+
+.imageAndTextStory {
+    height: 63vh;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+}
+
+.photoForTheStory {
+    width: 63%;
+    height: 100%;
+    background-image: url('../assets/tapasForWebSite.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+#photoOneForTheStory {
+    height: 500px;
+    top: 978px;
+    width: 40%;
+    position: absolute;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    background-image: url('../assets/cortoMaltese.jpg');
+}
+
+.titleForStoryAndWineFood {
+    height: 10vh;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    background-color: #F4A940;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+#ourFoodAndWine {
+    width: 15%;
+    margin-left: auto;  
+    margin-right: 15%;
+    min-width: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.ourFoodDesc {
+    width: 80%;
+    height: 40vh;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.styleForTheTextDisplay {
+    padding: 5%;
+}
+
+.imageForOurFoodDesc {
+    width: 70%; 
+    background-image: url('../assets/tapas2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+#separateTitleAndTextFood {
+    height: 3px;
+    width: 30%;
+    background-color: #F4A940;
+    /* margin: auto; */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.textForOurFoodDesc {
+    width: 30%; 
+    text-align: center;
+}
+
+.ourWineDesc {
+    width: 80%;
+    height: 40vh;
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.imageForOurWineDesc {
+    width: 70%; 
+    background-image: url('../assets/winePhotoForWebSite.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+#separateTitleAndTextWine {
+    height: 3px;
+    width: 30%;
+    background-color: #F4A940;
+    margin-left: auto;
+    /* margin: auto; */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.textForOurWineDesc {
+    width: 30%; 
+    text-align: center;
+}
+
+.descriptionForTheMap {
+    height: 70vh;
+    width: 100%;
+    margin-top: 5% !important;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/map2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.addressAndInfo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 250px;
+    height: 250px;
+    min-height: 225px;
+    padding: 2%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.locationAndHours {
+    border-bottom: 3px solid #F4A940;;
+    width: 115px;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+}
+
+.dayOfTheWeek {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2%;
+}
+
+.openingHours {
+    font-weight: bold;
+}
+
+.logoForTheFooter {
+    width: 15%;
+    height: 100%;
+}
+
+.contactUsAndSocialMediaContent {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+}
+
+.divForContactUs {
+    width: 30%;
+    margin-left: 5%;
+}
+
+.contactUs {
+    margin: 0;
+    height: 25%;
+    margin-bottom: -10px;
+    display: flex;
+    align-items: center;
+}
+
+.informationForContact {
+    height: 75%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.contactDetails {
+    display: flex;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#phoneNumber {
+    margin: 0; 
+    margin-left: 2.5%;
+}
+
+#contactDetailsPhone:hover {
+    cursor: pointer;
+    color: white;
+}
+
+#emailContact {
+    margin: 0; 
+    margin-left: 2.5%;
+}
+
+#addressAndLocation {
+    margin: 0; 
+    margin-left: 2.5%;
+}
+
+#contactDetailsMap:hover {
+    cursor: pointer;
+    color: white;
+}
+
+#contactDetailsMap2:hover {
+    cursor: pointer;
+    color: #F4A940;
+}
+
+.divForSocialMedia {
+    width: 30%;
+}
+
+.divForQuoteFooter {
+    width: 40%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.contentImageOfInstagramAndFb {
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+}
+
+.contentImageOfInstagram {
+    width: 33.33%;
+    font-size: 2.5rem;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fa-instagram:hover {
+    transition: 0.5s;
+    color: #8a3ab9;
+    cursor: pointer;
+}
+
+#contentForFacebook {
+    height: 60%;
+    margin: auto;
+    border-left: 3px solid dimgrey;
+}
+
+.fa-facebook:hover {
+    transition: 0.5s;
+    color: #3B5999;
+    cursor: pointer;
+}
+
+.fa-twitter:hover {
+    transition: 0.5s;
+    color: #3AA2F3;
+    cursor: pointer;
+}
+
+.styleDivContactAndSocial {
+    height: 3px;
+    width: 80px;
+    background-color: dimgrey;
+}
+
+#copyRightDiv {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #c57300;
+    color: #00000063;
+}
+
+
+/* MEDIA SCREEN RESPONSIVE */
+
+@media screen and (max-width: 950px) {
+
+    #photoOneForTheStory {
+        display: none
+    }
+
+    .logoDisplay {
+        width: 15%;
+    }
+}
+
+@media screen and (max-height: 730px) {
+    #photoOneForTheStory {
+        top: 870px;
+    }
+}
+
+@media screen and (max-width: 1025px) and (max-height: 1400px) {
+
+    .ourFoodDesc {
+        height: 30vh;
+    }
+
+    .ourWineDesc {
+        height: 40vh;
+    }
+
+    .photoForTheStory {
+        width: 100%;
+    }
+
+    #photoOneForTheStory {
+        display: none;
+    }
+
+    .logoForTheFooter {
+        display: none;
+    }
+
+    .contactUsAndSocialMediaContent {
+        width: 100%;
+    }
+
+    .divForQuoteFooter {
+        font-size: 25px;
+    }
+
+    .titleForStoryAndWineFood {
+        height: 15vh;
+    }
+
+    footer {
+        margin-top: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .buttonToReserve {
+        width: 20%;
+        height: 55%;
+        text-align: center;
+    }
+
+    .buttonToSeeFood {
+        width: 20%;
+        height: 55%;
+        text-align: center;
+    }
+
+    .textOfTheStory {
+        width: 50%;
+    }
+
+    .photoForTheStory {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    
+    .contentForHeader {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .logoDisplay {
+        width: 25%;
+    }
+
+    .descriptionHeader {
+        height: 60%;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .textIntroduction {
+        height: 70%;
+    }
+
+    .buttonToNavigate {
+        height: 30%;
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        font-size: 10px;
+    }
+
+    .textOfTheStory {
+        width: 65%;
+        height: auto;
+        margin-bottom: 5%;
+    }
+
+    .imageAndTextStory {
+        height: 63vh;
+        width: 100%;
+    }
+
+    .descriptionForFoodAndWine {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ourFoodDesc {
+        width: 80%;
+        height: auto;
+        margin-top: 5% !important;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .imageForOurFoodDesc {
+        width: 100%;
+        height: 125px;
+    }
+
+    .textForOurFoodDesc {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+
+    .ourWineDesc {
+        width: 80%;
+        height: auto;
+        margin-top: 5% !important;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .imageForOurWineDesc {
+        width: 100%;
+        height: 125px;
+    }
+
+    .textForOurWineDesc {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+
+    .separateTitleAndText {
+        height: 10px;
+        width: 30%;
+        margin: auto;
+    }
+
+    .descriptionForTheMap {
+        height: 60vh;
+        width: 100%;
+        margin-top: 5% !important;
+        /* margin: auto; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .addressAndInfo {
+        text-align: center;
+        width: 50%;
+        height: 60%;
+    }
+
+    .logoForTheFooter {
+        display: none;
+    }
+
+    .contactUsAndSocialMediaContent {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .divForContactUs {
+        width: 40%;
+        margin-left: 0;
+    }
+
+    .contactUs {
+        margin: 0;
+        height: 20%;
+        justify-content: center;
+    }
+
+    .informationForContact {
+        height: 80%;
+    }
+
+    .divForSocialMedia {
+        width: 40%;
+    }
+
+    .contentImageOfInstagram {
+        height: 80%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contentImageOfInstagramAndFb {
+        height: 80%;
+    }
+
+    .divForQuoteFooter {
+        display: none;
+    }
+
+    .styleDivContactAndSocial {
+        margin: auto;
+    }
+    
+    footer {
+        height: 30vh;
+    }
+
+}
+
+@media screen and (max-width: 420px) and (max-height: 820px) {
+
+    .titleForStoryAndWineFood {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .addressAndInfo{
+        height: 62%;
+    }
+
+    .contactUsAndSocialMediaContent {
+        flex-direction: column;
+    }
+
+    .divForContactUs {
+        width: 100%;
+    }
+
+    .divForSocialMedia {
+        width: 100%;
+    }
+
+    .informationForContact {
+        display: flex;
+        align-items: center;
+    }
+
+    .contactUs {
+        margin-top: 5%;
+    }
+
+    footer {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 380px) and (max-height: 740px){
+    
+    .addressAndInfo {
+        height: 65%;
+    }
+
+}
+
+@media screen and (max-width: 450px) and (max-height: 670px){
+
+
+    .contactUsAndSocialMediaContent {
+        flex-direction: column;
+    }
+
+    .divForContactUs {
+        width: 100%;
+        height: 50%;
+    }
+
+    .divForSocialMedia {
+        height: 50%;
+        width: 100%;
+    }
+
+    .contactDetails { 
+        margin: 2% auto;
+    }
+
+    .titleForStoryAndWineFood {
+        height: 10vh;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+    .addressAndInfo{
+        height: 70%;
+    }
+
+    footer {
+        height: 50vh;
+    }
+}
+
+
+.classyyyyy {
+    color: #EE7A33;
+    color: #E08234;
+    color: #F4A940;
+    color: #E69C5F;
+    color: #F7C278;
+    color: #E69C5F;
+    color: #F6C07A;
+    color: #EBC098;
+}

@@ -4,12 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="style.css" rel="stylesheet">
-        <script type="text/javascript" src= main.js></script>
+        <link rel="icon" type="image/png" href="./favicon/favicon.png" />
+        <link href="./css/style.css" rel="stylesheet">
+        <script type="text/javascript" src= ./script/main.js></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css?family=Caveat|Great+Vibes|Josefin+Sans|Kalam|Lobster|Josefin+Sans&display=swap" rel="stylesheet">
+        <title>D&D Restaurant</title>
     </head>
     <body>
+        <div id="cover">
+            <p id="coverText">D&D</p>
+        </div>
         <header>
             <div class="headerLogoAndStyleBar">
                 <div class="logoDisplay">
@@ -21,7 +27,7 @@
                 <div class="descriptionHeader">
                     <div class="textIntroduction">
                         <h1 id="barName">D&D</h1>
-                        <h2>The Finest Place for Originals Tapas and Wines</h2>
+                        <h2 id="descripBar">The Finest Place for Originals Tapas and Wines</h2>
                     </div>
                     <div class="buttonToNavigate">
                         <div class="buttonToReserve">BOOK TABLE</div>
@@ -29,11 +35,16 @@
                     </div>
                 </div>
             </container>
+            <div id="arrowToGoDown">
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </header>
         <main id="mainContent">
             <container class="descriptionStoryRestau">
-                <div class="ourStorytitle">
-                    <h2>WHO ARE WE?</h2>
+                <div class="titleForStoryAndWineFood">
+                    <div class="ourStorytitle">
+                        <h2>WHO ARE D&D THEN?</h2>
+                    </div>
                 </div>
                 <div class="divForTheTextOfTheStory">
                     <div class="textOfTheStory">
@@ -41,11 +52,17 @@
                     </div>
                 </div>
                 <div class="imageAndTextStory">
+                    <div class="photoForTheStory" id="photoOneForTheStory"></div>
                     <div class="photoForTheStory"></div>
                 </div>
                 <!-- <div class="backgroundDifferntColorForSeparation"></!--> 
             </container>
             <container class="descriptionForFoodAndWine">
+                <div class="titleForStoryAndWineFood" id="titleForFoodAndWine">
+                    <div id="ourFoodAndWine">
+                        <h2>OUR FOOD AND WINE</h2>
+                    </div>
+                </div>
                 <div class="ourFoodDesc">
                     <div class="imageForOurFoodDesc"></div>
                     <div class="textForOurFoodDesc">
@@ -61,7 +78,7 @@
                         <h3>OUR WINE</h3>
                         <div id="separateTitleAndTextWine"></div>
                         <div class="textOurWine">
-                                <p class="styleForTheTextDisplay" >Carefully choose by Dominique, he proposes to you the best selection of wine around France, South-Africa and South-America. Changing enough often so you'll always have the opportunity to discover new products from around the world. </p>
+                                <p class="styleForTheTextDisplay" >Carefully picked by Dominique, he proposes to you the best selection of wine around France, South-Africa and South-America. Changing enough often so you'll always have the opportunity to discover new products from around the world. </p>
                         </div>
                     </div>
                     <div class="imageForOurWineDesc"></div>                
@@ -70,8 +87,8 @@
             <container class="descriptionForTheMap">
                 <div class="addressAndInfo">
                     <h3 class="locationAndHours">LOCATION</h3>
-                    <div class="addressAndHours">
-                            <p class="dayOfTheWeek"> Avenue de , Brazzaville, RC </p>    
+                    <div class="addressAndHours" id="contactDetailsMap2">
+                            <p class="dayOfTheWeek"> Immeuble Bolloré, Avenue Amilcar Cabral, Brazzaville, RC </p>    
                     </div>
                     <h3 class="locationAndHours">HOURS</h3>
                     <div class="addressAndHours">
@@ -88,7 +105,7 @@
                         <h3 class="contactUs">CONTACT US</h3>
                         <div class="styleDivContactAndSocial"></div>
                         <div class="informationForContact">
-                            <div class="contactDetails">
+                            <div class="contactDetails" id="contactDetailsPhone">
                                 <i class="fas fa-phone"></i>
                                 <p id="phoneNumber"> - (+242)06-669-16-88 </p>
                             </div>
@@ -96,9 +113,9 @@
                                 <i class="fas fa-at"></i>
                                 <p id="emailContact"> - theDandD@gmail.com </p>
                             </div>
-                            <div class="contactDetails">
+                            <div class="contactDetails" id="contactDetailsMap">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <p id="addressAndLocation"> - Avenue de , Brazzaville, RC</p>
+                                <p id="addressAndLocation"> - Immeuble Bolloré, Avenue Amilcar Cabral, Brazzaville, RC </p>
                             </div>
                         </div>
                     </div>
@@ -107,12 +124,20 @@
                         <div class="styleDivContactAndSocial"></div>
                         <div class="contentImageOfInstagramAndFb">
                             <div class="contentImageOfInstagram">
-                                <p> <i class="fab fa-instagram"> </i> - Instagram</p>
+                                <p> 
+                                    <i class="fab fa-instagram"> </i>
+                                </p>
                             </div>
-                            <div id="contentForFacebook"></div>
                             <div class="contentImageOfInstagram">
-                                <p> <i class="fab fa-facebook"> </i> - Facebook</p>
+                                <p> 
+                                    <i class="fab fa-facebook"> </i>
+                                </p>
                             </div>
+                            <div class="contentImageOfInstagram">
+                                <p> 
+                                    <i class="fab fa-twitter"> </i>
+                                </p>
+                            </div>    
                         </div>
                     </div>
                     <div class="divForQuoteFooter">
