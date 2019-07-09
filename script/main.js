@@ -105,7 +105,8 @@ window.onload = () => {
 
     let mapIndic = document.querySelector('#contactDetailsMap');
     mapIndic.addEventListener('click', joinUs);
-
+    let mapAddress = document.querySelector('#contactDetailsMap2')
+    mapAddress.addEventListener('click', joinUs);
 
 
 }
