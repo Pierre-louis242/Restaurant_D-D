@@ -1,6 +1,6 @@
 
 html {
-    background-image: url('../assets/backgroundbody.jpg');
+    background-image: url('../assets/images/backgroundbody.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ header {
     width: 100%;
     display: flex; 
     flex-direction: column;
-    background-image: url("../assets/DandDHeader.png");
+    background-image: url("../assets/images/DandDHeader.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: white;
@@ -242,7 +242,7 @@ footer {
 .photoForTheStory {
     width: 63%;
     height: 100%;
-    background-image: url('../assets/tapasForWebSite.png');
+    background-image: url('../assets/images/tapasForWebSite.png');
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: auto;
@@ -255,7 +255,7 @@ footer {
     width: 40%;
     position: absolute;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
-    background-image: url('../assets/cortoMaltese.jpg');
+    background-image: url('../assets/images/cortoMaltese.jpg');
 }
 
 .titleForStoryAndWineFood {
@@ -295,7 +295,7 @@ footer {
 
 .imageForOurFoodDesc {
     width: 70%; 
-    background-image: url('../assets/tapas2.jpeg');
+    background-image: url('../assets/images/tapas2.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
@@ -326,7 +326,7 @@ footer {
 
 .imageForOurWineDesc {
     width: 70%; 
-    background-image: url('../assets/winePhotoForWebSite.jpg');
+    background-image: url('../assets/images/winePhotoForWebSite.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
@@ -355,7 +355,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../assets/map2.png');
+    background-image: url('../assets/images/map2.png');
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
@@ -858,7 +858,7 @@ footer {
     }
 }
 
-
+/* 
 .classyyyyy {
     color: #EE7A33;
     color: #E08234;
@@ -868,4 +868,4 @@ footer {
     color: #E69C5F;
     color: #F6C07A;
     color: #EBC098;
-}
+} */
