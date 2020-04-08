@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 
 html {
     background-attachment: fixed;
@@ -15,8 +17,13 @@ body {
 header {
     height: 100vh; 
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; 
-    flex-direction: column;
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column;
     background-image: url("../assets/images/canva-photo-editor_2.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,20 +33,31 @@ header {
 main {
     height: 100%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; 
-    flex-direction: column;
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column;
 }
 
 footer {
     height: 30vh;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-family: 'Josefin Sans', sans-serif !important;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     color: dimgrey;
     background-color: #F4A940;
     border-top: 3px solid #c57300;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 #cover {
@@ -52,14 +70,22 @@ footer {
     z-index:9999; 
     font-size: 8rem; 
     text-align: center; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex; 
-    justify-content: center; 
-    align-items: center;
+    -webkit-box-pack: center; 
+        -ms-flex-pack: center; 
+            justify-content: center; 
+    -webkit-box-align: center; 
+        -ms-flex-align: center; 
+            align-items: center;
     font-family: 'Nothing You Could Do', cursive !important;
     color: #F4A940;
 }
 
 #coverText {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
     color: black;
 }
@@ -67,24 +93,41 @@ footer {
 .headerLogoAndStyleBar {
     width: 100%;
     height: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .logoDisplay {
     width: 10%;
     height: 100%;
     min-width: 125px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-family: 'Nothing You Could Do', cursive;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #F4A940;
     border-radius: 0 0 4px 0;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
     font-size: 3rem;
 }
 
@@ -93,16 +136,24 @@ footer {
     height: 10%;
     background-color: #F4A940;
     border-radius: 4px 0 0 4px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 .contentForHeader {
     height: 100%; 
     width: 100%; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #barName {
@@ -130,9 +181,16 @@ footer {
 
 .buttonToNavigate {
     height: 31%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; 
-    flex-direction: row;
-    align-items: center;    
+    -webkit-box-orient: horizontal; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: row; 
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;    
     font-size: 15px;
 }
 
@@ -143,16 +201,25 @@ footer {
     margin-left: 5%;
     min-width: 50px;
     border-radius: 30px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
 }
 
 .buttonToReserve:hover {
     color: #ffffff !important;
     background: #F4A940;
     border-color: #F4A940 !important;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
     cursor: pointer;
 }
@@ -164,29 +231,44 @@ footer {
     margin-left: 5%;
     min-width: 50px;
     border-radius: 30px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
 }
 
 .buttonToSeeFood:hover {
     color: #ffffff !important;
     background: #F4A940;
     border-color: #F4A940 !important;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
     cursor: pointer;
 }
 
 #arrowToGoDown {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 60px;
     color: #F4A940;
     margin-top: auto;
 }
 
 .fa-chevron-down:hover {
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
     transition: 0.7s;
     color: white;
     text-shadow: 1px 1px 1px #F4A940;
@@ -196,8 +278,13 @@ footer {
 .descriptionStoryRestau {
     /* height: 100vh; */
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; 
-    flex-direction: column;
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column;
 }
 
 .ourStorytitle {
@@ -206,12 +293,18 @@ footer {
     margin-left: 15%;
     min-width: 100px;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #F4A940;
 }
 
 .divForTheTextOfTheStory {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
@@ -224,9 +317,15 @@ footer {
     margin-right: 10%;
     margin-bottom: 2.5%;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-left: 3px solid #F4A940;
 }
 
@@ -241,6 +340,8 @@ footer {
 .imageAndTextStory {
     width: 80vw;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -251,7 +352,8 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: auto;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 #photoOneForTheStory {
@@ -259,7 +361,8 @@ footer {
     top: 125vh;
     width: 40%;
     position: absolute;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
     background-image: url('../assets/images/cortoMaltese.jpg');
 }
 
@@ -268,10 +371,15 @@ footer {
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: #F4A940;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 #ourFoodAndWine {
@@ -280,8 +388,12 @@ footer {
     margin-right: 15%;
     min-width: 100px;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .ourFoodDesc {
@@ -290,8 +402,13 @@ footer {
     margin-top: 5%;
     margin-left: auto;
     margin-right: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .styleForTheTextDisplay {
@@ -303,7 +420,8 @@ footer {
     background-image: url('../assets/images/tapas2.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 #separateTitleAndTextFood {
@@ -311,7 +429,8 @@ footer {
     width: 30%;
     background-color: #F4A940;
     /* margin: auto; */
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 .textForOurFoodDesc {
@@ -325,8 +444,13 @@ footer {
     margin-top: 5%;
     margin-right: auto;
     margin-left: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .imageForOurWineDesc {
@@ -334,7 +458,8 @@ footer {
     background-image: url('../assets/images/winePhotoForWebSite.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 #separateTitleAndTextWine {
@@ -343,7 +468,8 @@ footer {
     background-color: #F4A940;
     margin-left: auto;
     /* margin: auto; */
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 .textForOurWineDesc {
@@ -356,33 +482,51 @@ footer {
     width: 100%;
     margin-top: 5% !important;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-image: url('../assets/images/map2.png');
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 .addressAndInfo {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #ffffff;
     width: 250px;
     height: 250px;
     min-height: 225px;
     padding: 2%;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 .locationAndHours {
     border-bottom: 3px solid #F4A940;;
     width: 140px;
-    margin-inline-end: auto;
-    margin-inline-start: auto;
+    -webkit-margin-end: auto;
+            margin-inline-end: auto;
+    -webkit-margin-start: auto;
+            margin-inline-start: auto;
 }
 
 .dayOfTheWeek {
@@ -402,8 +546,13 @@ footer {
 
 .contactUsAndSocialMediaContent {
     width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .divForContactUs {
@@ -415,18 +564,31 @@ footer {
     margin: 0;
     height: 25%;
     margin-bottom: -10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .informationForContact {
     height: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; 
-    flex-direction: column;
-    justify-content: center; 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
 }
 
 .contactDetails {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 80%;
     margin-top: 5%;
@@ -476,28 +638,48 @@ footer {
 
 .divForQuoteFooter {
     width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    -webkit-box-pack: center; 
+        -ms-flex-pack: center; 
+            justify-content: center; 
+    -webkit-box-align: center; 
+        -ms-flex-align: center; 
+            align-items: center; 
     text-align: center;
     font-family: 'Nothing You Could Do', cursive !important;
 }
 
 .contentImageOfInstagramAndFb {
     height: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .contentImageOfInstagram {
     width: 33.33%;
     font-size: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; 
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .fa-instagram:hover {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     color: #8a3ab9;
     cursor: pointer;
@@ -510,12 +692,16 @@ footer {
 }
 
 .fa-facebook:hover {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     color: #3B5999;
     cursor: pointer;
 }
 
 .fa-twitter:hover {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     color: #3AA2F3;
     cursor: pointer;
@@ -529,9 +715,15 @@ footer {
 
 #copyRightDiv {
     height: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; 
-    justify-content: center; 
-    align-items: center;
+    -webkit-box-pack: center; 
+        -ms-flex-pack: center; 
+            justify-content: center; 
+    -webkit-box-align: center; 
+        -ms-flex-align: center; 
+            align-items: center;
     background-color: #c57300;
     color: #00000063;
 }
@@ -592,8 +784,11 @@ footer {
 
     footer {
         margin-top: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 }
 
@@ -631,10 +826,17 @@ footer {
     .contentForHeader {
         height: 70%;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .logoDisplay {
@@ -653,10 +855,18 @@ footer {
 
     .buttonToNavigate {
         height: 30%;
-        flex-direction: row;
-        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         font-size: 10px;
     }
 
@@ -672,9 +882,16 @@ footer {
     }
 
     .descriptionForFoodAndWine {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .ourFoodDesc {
@@ -682,9 +899,15 @@ footer {
         height: auto;
         margin-top: 5% !important;
         margin: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+                box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
     }
 
     .imageForOurFoodDesc {
@@ -703,9 +926,15 @@ footer {
         height: auto;
         margin-top: 5% !important;
         margin: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+                box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
     }
 
     .imageForOurWineDesc {
@@ -730,10 +959,19 @@ footer {
         width: 100%;
         margin-top: 5% !important;
         /* margin: auto; */
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .addressAndInfo {
@@ -748,9 +986,16 @@ footer {
 
     .contactUsAndSocialMediaContent {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
     }
 
     .divForContactUs {
@@ -761,7 +1006,9 @@ footer {
     .contactUs {
         margin: 0;
         height: 20%;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .informationForContact {
@@ -775,7 +1022,9 @@ footer {
     .contentImageOfInstagram {
         height: 80%;
         text-align: center;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .contentImageOfInstagramAndFb {
@@ -808,7 +1057,10 @@ footer {
     }
 
     .contactUsAndSocialMediaContent {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .divForContactUs {
@@ -820,8 +1072,12 @@ footer {
     }
 
     .informationForContact {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .contactUs {
@@ -845,7 +1101,10 @@ footer {
 
 
     .contactUsAndSocialMediaContent {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .divForContactUs {
@@ -894,9 +1153,16 @@ footer {
 #copyright-hugo-pratt {
     height: 100%;
     text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0;
     font-size: 12px;
     opacity: 0.3;
