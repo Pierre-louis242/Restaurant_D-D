@@ -100,7 +100,7 @@ window.onload = () => {
     phoneNumber.addEventListener('click', callUs);
 
     joinUs = () => {
-        window.open('https://www.google.com/maps/search/Immeuble+Bollor%C3%A9,+Avenue+Amilcar+Cabral,+Brazzaville,+RC/@-4.2712901,15.2882265,17z/data=!3m1!4b1?hl=fr', '_blank');
+        window.open('https://www.google.com/maps/search/Immeuble+Bollor%C3%A9,+Avenue+Amilcar+Cabral,+Brazzaville,+RC/@-4.273635, 15.286967/data=!3m1!4b1?hl=fr', '_blank');
     }
 
     let mapIndic = document.querySelector('#contactDetailsMap');
