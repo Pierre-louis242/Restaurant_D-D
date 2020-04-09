@@ -10,34 +10,6 @@
     backface-visibility: hidden;
 }
 
-/* CSS VARIABLES */
-:root {
-    --bs-primary: 0 1px 5px rgba(0, 0, 0, 0.15);
-    --bs-secondary: 0 1px 5px rgba(0, 0, 0, 0.45);
-
-    --clr-white-primary: #FFFFFF;
-    --clr-white-secondary: floralwhite;
-
-    --clr-dark: rgb(0, 0, 0);
-    --clr-dark-clear: dimgrey;
-    --clr-dark-faded: #00000063;
-
-    --clr-purple: #8a3ab9;
-    --clr-blue-primary: #3B5999;
-    --clr-blue-secondary: #3AA2F3;
-    --clr-orange-primary: #F4A940;
-    --clr-orange-secondary: #c57300;
-
-    --clr-accent: #81d4fa;
-}
-
-:focus {
-    outline-offset: 2px;
-    -webkit-transition: all 100ms ease-in-out;
-    -o-transition: all 100ms ease-in-out;
-    transition: all 100ms ease-in-out;
-}
-
 html {
     background-attachment: fixed;
     background-position: center;
@@ -92,11 +64,45 @@ footer {
             flex-direction: row;
     color: var(--clr-dark-clear);
     background-color: var(--clr-orange-primary);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#c57300), to(#F4A940));
+    background-image: -o-linear-gradient(top left, #c57300, #F4A940);
+    background-image: linear-gradient(to bottom right, #c57300, #F4A940); 
     border-top: 3px solid var(--clr-orange-secondary);
     -webkit-box-shadow: var(--bs-primary);
             box-shadow: var(--bs-primary);
 }
 
+:focus {
+    outline-offset: 2px;
+    -webkit-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+
+/* CSS VARIABLES */
+:root {
+    --bs-primary: 0 1px 5px rgba(0, 0, 0, 0.15);
+    --bs-secondary: 0 1px 5px rgba(0, 0, 0, 0.45);
+
+    --clr-white-primary: #FFFFFF;
+    --clr-white-secondary: floralwhite;
+
+    --clr-dark: rgb(0, 0, 0);
+    --clr-dark-clear: dimgrey;
+    --clr-dark-faded: #00000063;
+
+    --clr-purple: #8a3ab9;
+    --clr-blue-primary: #3B5999;
+    --clr-blue-secondary: #3AA2F3;
+    --clr-orange-primary: #F4A940;
+    --clr-orange-secondary: #c57300;
+
+    --clr-accent: #81d4fa;
+}
+
+
+/* MAIN PAGE */
 #cover {
     position: fixed;
     height: 100%; 
@@ -118,6 +124,9 @@ footer {
             align-items: center;
     font-family: 'Nothing You Could Do', cursive !important;
     color: var(--clr-orange-primary);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#F4A940), to(#c57300));
+    background-image: -o-linear-gradient(top left, #F4A940, #c57300);
+    background-image: linear-gradient(to bottom right, #F4A940, #c57300); 
 }
 
 #coverText {
@@ -162,6 +171,9 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     background-color: var(--clr-orange-primary);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#F4A940), to(#c57300));
+    background-image: -o-linear-gradient(top left, #F4A940, #c57300);
+    background-image: linear-gradient(to bottom right, #F4A940, #c57300); 
     border-radius: 0 0 4px 0;
     -webkit-box-shadow: var(--bs-primary);
             box-shadow: var(--bs-primary);
@@ -172,6 +184,9 @@ footer {
     width: 30%; 
     height: 10%;
     background-color: var(--clr-orange-primary);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#F4A940), to(#c57300));
+    background-image: -o-linear-gradient(top left, #F4A940, #c57300);
+    background-image: linear-gradient(to bottom right, #F4A940, #c57300); 
     border-radius: 4px 0 0 4px;
     -webkit-box-shadow: var(--bs-primary);
             box-shadow: var(--bs-primary);
@@ -315,7 +330,6 @@ footer {
 }
 
 .descriptionStoryRestau {
-    /* height: 100vh; */
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -325,6 +339,26 @@ footer {
         -ms-flex-direction: column; 
             flex-direction: column;
 }
+
+.firstTitleOurStory {
+    height: 10vh;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: var(--clr-orange-primary);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#F4A940), to(#c57300));
+    background-image: -o-linear-gradient(top left, #F4A940, #c57300);
+    background-image: linear-gradient(to bottom right, #F4A940, #c57300); 
+    -webkit-box-shadow: var(--bs-primary);
+            box-shadow: var(--bs-primary);
+}
+
 
 .ourStorytitle {
     width: 30%;
@@ -338,7 +372,6 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: var(--clr-orange-primary);
 }
 
 .divForTheTextOfTheStory {
@@ -417,6 +450,9 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     background-color: var(--clr-orange-primary);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#c57300), to(#F4A940));
+    background-image: -o-linear-gradient(top left, #c57300, #F4A940);
+    background-image: linear-gradient(to bottom right, #c57300, #F4A940); 
     -webkit-box-shadow: var(--bs-primary);
             box-shadow: var(--bs-primary);
 }
@@ -424,7 +460,6 @@ footer {
 #ourFoodAndWine {
     width: 30%;
     margin-left: auto;  
-    margin-right: 15%;
     min-width: 100px;
     text-align: center;
     display: -webkit-box;
@@ -467,7 +502,9 @@ footer {
     height: 3px;
     width: 30%;
     background-color: var(--clr-orange-primary);
-    /* margin: auto; */
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#F4A940), to(#c57300));
+    background-image: -o-linear-gradient(top left, #F4A940, #c57300);
+    background-image: linear-gradient(to bottom right, #F4A940, #c57300); 
     -webkit-box-shadow: var(--bs-primary);
             box-shadow: var(--bs-primary);
 }
@@ -505,8 +542,10 @@ footer {
     height: 3px;
     width: 30%;
     background-color: var(--clr-orange-primary);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#F4A940), to(#c57300));
+    background-image: -o-linear-gradient(top left, #F4A940, #c57300);
+    background-image: linear-gradient(to bottom right, #F4A940, #c57300); 
     margin-left: auto;
-    /* margin: auto; */
     -webkit-box-shadow: var(--bs-primary);
             box-shadow: var(--bs-primary);
 }
@@ -555,7 +594,6 @@ footer {
             flex-direction: column;
     background-color: var(--clr-white-primary);
     width: 250px;
-    /* height: 250px; */
     min-height: 225px;
     padding: 2%;
     -webkit-box-shadow: var(--bs-primary);
@@ -787,7 +825,6 @@ footer {
 
 
 /* MEDIA SCREEN RESPONSIVE */
-
 @media screen and (max-width: 950px) {
 
     #photoOneForTheStory {
@@ -835,10 +872,6 @@ footer {
         font-size: 25px;
     }
 
-    .titleForStoryAndWineFood {
-        height: 15vh;
-    }
-
     footer {
         margin-top: 0;
         display: -webkit-box;
@@ -876,6 +909,9 @@ footer {
         width: 100%;
     }
 
+    #ourFoodAndWine {
+        margin-right: 15%;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -1015,7 +1051,6 @@ footer {
         height: 60vh;
         width: 100%;
         margin-top: 5% !important;
-        /* margin: auto; */
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
