@@ -64,10 +64,6 @@ footer {
             flex-direction: row;
     color: var(--clr-dark-clear);
     background-color: var(--clr-orange-primary);
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#c57300), to(#F4A940));
-    background-image: -o-linear-gradient(top left, #c57300, #F4A940);
-    background-image: linear-gradient(to bottom right, #c57300, #F4A940); 
-    border-top: 3px solid var(--clr-orange-secondary);
     -webkit-box-shadow: var(--bs-primary);
             box-shadow: var(--bs-primary);
 }
@@ -97,8 +93,6 @@ footer {
     --clr-blue-secondary: #3AA2F3;
     --clr-orange-primary: #F4A940;
     --clr-orange-secondary: #c57300;
-
-    --clr-accent: #81d4fa;
 }
 
 
@@ -124,9 +118,9 @@ footer {
             align-items: center;
     font-family: 'Nothing You Could Do', cursive !important;
     color: var(--clr-orange-primary);
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#F4A940), to(#c57300));
-    background-image: -o-linear-gradient(top left, #F4A940, #c57300);
-    background-image: linear-gradient(to bottom right, #F4A940, #c57300); 
+    background-image: -o-linear-gradient(top left, var(--clr-orange-primary), var(--clr-orange-secondary));
+    background-image: -webkit-gradient(linear, left top, right bottom, from(var(--clr-orange-primary)), to(var(--clr-orange-secondary)));
+    background-image: linear-gradient(to bottom right, var(--clr-orange-primary), var(--clr-orange-secondary)); 
 }
 
 #coverText {
@@ -171,9 +165,9 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     background-color: var(--clr-orange-primary);
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#F4A940), to(#c57300));
-    background-image: -o-linear-gradient(top left, #F4A940, #c57300);
-    background-image: linear-gradient(to bottom right, #F4A940, #c57300); 
+    background-image: -o-linear-gradient(top left, var(--clr-orange-primary), var(--clr-orange-secondary));
+    background-image: -webkit-gradient(linear, left top, right bottom, from(var(--clr-orange-primary)), to(var(--clr-orange-secondary)));
+    background-image: linear-gradient(to bottom right, var(--clr-orange-primary), var(--clr-orange-secondary)); 
     border-radius: 0 0 4px 0;
     -webkit-box-shadow: var(--bs-primary);
             box-shadow: var(--bs-primary);
@@ -184,9 +178,9 @@ footer {
     width: 30%; 
     height: 10%;
     background-color: var(--clr-orange-primary);
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#F4A940), to(#c57300));
-    background-image: -o-linear-gradient(top left, #F4A940, #c57300);
-    background-image: linear-gradient(to bottom right, #F4A940, #c57300); 
+    background-image: -o-linear-gradient(top left, var(--clr-orange-primary), var(--clr-orange-secondary));
+    background-image: -webkit-gradient(linear, left top, right bottom, from(var(--clr-orange-primary)), to(var(--clr-orange-secondary)));
+    background-image: linear-gradient(to bottom right, var(--clr-orange-primary), var(--clr-orange-secondary)); 
     border-radius: 4px 0 0 4px;
     -webkit-box-shadow: var(--bs-primary);
             box-shadow: var(--bs-primary);
@@ -352,9 +346,9 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     background-color: var(--clr-orange-primary);
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#F4A940), to(#c57300));
-    background-image: -o-linear-gradient(top left, #F4A940, #c57300);
-    background-image: linear-gradient(to bottom right, #F4A940, #c57300); 
+    background-image: -o-linear-gradient(top left, var(--clr-orange-primary), var(--clr-orange-secondary));
+    background-image: -webkit-gradient(linear, left top, right bottom, from(var(--clr-orange-primary)), to(var(--clr-orange-secondary)));
+    background-image: linear-gradient(to bottom right, var(--clr-orange-primary), var(--clr-orange-secondary)); 
     -webkit-box-shadow: var(--bs-primary);
             box-shadow: var(--bs-primary);
 }
@@ -450,9 +444,9 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     background-color: var(--clr-orange-primary);
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#c57300), to(#F4A940));
-    background-image: -o-linear-gradient(top left, #c57300, #F4A940);
-    background-image: linear-gradient(to bottom right, #c57300, #F4A940); 
+    background-image: -o-linear-gradient(top left, var(--clr-orange-secondary), var(--clr-orange-primary));
+    background-image: -webkit-gradient(linear, left top, right bottom, from(var(--clr-orange-secondary)), to(var(--clr-orange-primary)));
+    background-image: linear-gradient(to bottom right, var(--clr-orange-secondary), var(--clr-orange-primary)); 
     -webkit-box-shadow: var(--bs-primary);
             box-shadow: var(--bs-primary);
 }
@@ -502,9 +496,9 @@ footer {
     height: 3px;
     width: 30%;
     background-color: var(--clr-orange-primary);
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#F4A940), to(#c57300));
-    background-image: -o-linear-gradient(top left, #F4A940, #c57300);
-    background-image: linear-gradient(to bottom right, #F4A940, #c57300); 
+    background-image: -o-linear-gradient(top left, var(--clr-orange-primary), var(--clr-orange-secondary));
+    background-image: -webkit-gradient(linear, left top, right bottom, from(var(--clr-orange-primary)), to(var(--clr-orange-secondary)));
+    background-image: linear-gradient(to bottom right, var(--clr-orange-primary), var(--clr-orange-secondary)); 
     -webkit-box-shadow: var(--bs-primary);
             box-shadow: var(--bs-primary);
 }
@@ -542,9 +536,9 @@ footer {
     height: 3px;
     width: 30%;
     background-color: var(--clr-orange-primary);
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#F4A940), to(#c57300));
-    background-image: -o-linear-gradient(top left, #F4A940, #c57300);
-    background-image: linear-gradient(to bottom right, #F4A940, #c57300); 
+    background-image: -o-linear-gradient(top left, var(--clr-orange-primary), var(--clr-orange-secondary));
+    background-image: -webkit-gradient(linear, left top, right bottom, from(var(--clr-orange-primary)), to(var(--clr-orange-secondary)));
+    background-image: linear-gradient(to bottom right, var(--clr-orange-primary), var(--clr-orange-secondary)); 
     margin-left: auto;
     -webkit-box-shadow: var(--bs-primary);
             box-shadow: var(--bs-primary);
@@ -820,6 +814,7 @@ footer {
         -ms-flex-align: center; 
             align-items: center;
     background-color: var(--clr-orange-secondary);
+    background-image: -webkit-gradient(linear, left top, right bottom, from (var(--clr-orange-secondary)), to(var(--clr-orange-primary)));
     color: var(--clr-dark-faded);
 }
 
